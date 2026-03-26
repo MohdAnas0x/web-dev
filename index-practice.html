@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav {
+            position: fixed;
+            top: 30px;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            z-index: 1000;
+            padding: 15px 30px;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(20px);
+            border-radius: 50px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            opacity: 0;
+            animation: slideDown 1s forwards 0.5s;
+            /* display: flex; */
+            /* justify-content: center; */
+            /* align-items: center; */
+            width: fit-content;
+        }
+
+        .magnetic {
+            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 40px;
+            list-style: none;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            font-weight: 500;
+            position: relative;
+            transition: all 0.3s;
+        }
+
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            margin: 0;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul class="nav-links">
+            <li> <a class="magnetic">Home</a></li>
+            <li> <a class="magnetic">Work</a></li>
+            <li> <a class="magnetic">About</a></li>
+            <li> <a class="magnetic">Contact</a></li>
+        </ul>
+    </nav>
+</body>
+
+</html>
