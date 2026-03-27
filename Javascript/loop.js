@@ -108,3 +108,17 @@ const classInfo1 = [
 console.log(classInfo1); 
 console.log(classInfo1[1].city); 
 console.log(classInfo1[2].name); 
+
+console.log(Math.random());    
+
+let ran_num = Math.random();
+
+ran_num = ran_num * 100 ;
+
+ran_num = Math.floor(ran_num);
+
+console.log(ran_num);  
+
+let random = Math.floor((Math.random() * 10) + 1);
+
+console.log(random);
