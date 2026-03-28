@@ -20,4 +20,23 @@ btn.addEventListener('click', function() {
 
 });
 
-let btndel = document.querySelector('.delete');
+// let li = document.querySelector('li');
+
+ul.addEventListener("click", function(event) {
+    console.log(event.target.nodeName);
+    console.log("clicked");
+
+    if(event.target.nodeName == "BUTTON"){
+        let listItem = event.target.parentElement;
+        listItem.remove();
+    }
+})
+
+// let btndel = document.querySelectorAll('.delete');
+
+// for(delbtn of btndel) {
+//     delbtn.addEventListener('click', function() {
+//         let par = this.parentElement;
+//         par.remove();
+//     });
+// }
