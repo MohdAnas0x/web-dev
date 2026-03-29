@@ -51,20 +51,20 @@ function getRandomColor() {
 
 
 
-let form = document.querySelector('form');
+// let form = document.querySelector('form');
+
+// // form.addEventListener('submit', function (event){
+// //     event.preventDefault();
+// //     alert("form was submitted");
+// // });
 
 // form.addEventListener('submit', function (event){
 //     event.preventDefault();
-//     alert("form was submitted");
-// });
-
-form.addEventListener('submit', function (event){
-    event.preventDefault();
     
-    let user = document.querySelector("#username");
-    let pass  = document.querySelector("#pass");
-    console.dir(form);
-    console.log(user.value);
-    console.log(pass.value);
-});
+//     let user = document.querySelector("#username");
+//     let pass  = document.querySelector("#pass");
+//     console.dir(form);
+//     console.log(user.value);
+//     console.log(pass.value);
+// });
 
