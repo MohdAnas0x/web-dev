@@ -1,0 +1,17 @@
+body{
+    background-color: rgb(182, 181, 218);
+}
+
+h1{
+    color: maroon;
+    text-align: center;
+}
+
+.post{
+    /* background-color:cornflowerblue; */
+
+}
+
+.user{
+    font-style: italic;
+}
